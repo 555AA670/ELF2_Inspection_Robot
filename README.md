@@ -49,25 +49,7 @@ ELF2_Inspection_Robot/
 └── README.md
 ```
 
----
 
-## 🚀 快速启动指南
-
-### 环境依赖
-- **上位机**：Ubuntu 22.04 + ROS2 Humble + RKLLM Runtime
-- **下位机**：Keil MDK (ARMCC) + STM32CubeMX
-
-### 运行步骤
-1. **编译下位机**：将 `2_STM32_Code` 中的固件烧录至 STM32G431 底板。
-2. **构建 ROS2 环境**：在 `1_ROS2_Workspace` 中执行 `colcon build` 编译节点。
-3. **启动系统**：
-   ```bash
-   # 启动雷达、底盘通信网关及 Nav2 导航栈
-   ros2 launch my_nav_launch.py
-   
-   # 启动核心巡检任务与大模型 Agent
-   python3 patrol_commander.py
-   ```
 
 ---
 
